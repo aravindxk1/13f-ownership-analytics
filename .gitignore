@@ -1,0 +1,8 @@
+scratch/
+output/
+*.duckdb
+*.xml
+*.zip
+*.csv
+.env
+__pycache__/
