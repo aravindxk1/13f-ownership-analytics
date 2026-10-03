@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "13f-ownership-analytics"
+version = "0.1.0"
+description = "13F institutional ownership analytics pipeline (AAPL, MSFT, NVDA)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "duckdb==1.5.4",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["aggregate", "changes", "cli", "db", "normalize", "report", "snapshot", "vintages"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
