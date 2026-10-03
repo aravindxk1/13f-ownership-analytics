@@ -100,3 +100,5 @@ Q3-2024 snapshot disowned by the filer and superseded via tests/data/edgar_overr
   verifier rounds, all agreeing).
 
 Not investment advice.
+
+Note: these checks were run outside this repository against the original SEC filings; the raw downloaded files and the database are not included. Each row links to the filing so it can be checked independently.
